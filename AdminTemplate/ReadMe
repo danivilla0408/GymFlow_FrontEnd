@@ -1,0 +1,45 @@
+/gym-software-frontend
+│
+├── /public                 # Public directory for static assets
+│   ├── /images             # Static images like logos, icons, etc.
+│   ├── /fonts              # Font files used in the project
+│   ├── index.html          # Main HTML file
+│   └── favicon.ico         # Website favicon
+│
+├── /src                    # Source directory for all the frontend code
+│   ├── /assets             # Contains all static assets used across the app
+│   │   ├── /css            # Custom CSS styles
+│   │   ├── /js             # Custom JavaScript files
+│   │   └── /images         # Additional images used in the components
+│   │
+│   ├── /components         # Reusable UI components (e.g., Navbar, Sidebar)
+│   │   ├── Navbar.js
+│   │   ├── Sidebar.js
+│   │   └── Footer.js
+│   │
+│   ├── /pages              # Different page views (e.g., Dashboard, Members, Settings)
+│   │   ├── Dashboard.js
+│   │   ├── Members.js
+│   │   └── Settings.js
+│   │
+│   ├── /layouts            # Layout components for structuring pages
+│   │   ├── AdminLayout.js  # Layout for admin pages (includes sidebar, header)
+│   │   └── AuthLayout.js   # Layout for login, register pages
+│   │
+│   ├── /services           # Service files for API calls, authentication, etc.
+│   │   ├── api.js          # API calls to the backend
+│   │   └── auth.js         # Authentication-related functions
+│   │
+│   ├── /utils              # Utility functions, helpers, and constants
+│   │   ├── helpers.js
+│   │   └── constants.js
+│   │
+│   ├── /styles             # Global SCSS/CSS styles
+│   │   ├── main.scss       # Main SCSS file
+│   │   └── variables.scss  # SCSS variables (colors, spacing)
+│   │
+│   └── index.js            # Entry point for your React/Vue/Angular app
+│
+├── package.json            # Dependencies and scripts
+├── .env                    # Environment variables
+└── README.md               # Project documentation
