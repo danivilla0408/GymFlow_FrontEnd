@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.section {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.section table, .section th, .section td {
+    border: 1px solid #ddd;
+}
+
+.section th, .section td {
+    padding: 10px;
+    text-align: left;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 5px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.input-group {
+    margin: 10px 0;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#searchPayments {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilos para los botones personalizados */
+.btn-custom {
+    background-color: #FFD700; /* Color de fondo amarillo dorado */
+    color: #000; /* Color del texto (negro) */
+    border: none; /* Elimina el borde predeterminado */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Alineación del texto al centro */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-size: 16px; /* Tamaño del texto */
+    display: inline-block; /* Muestra el botón en línea */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.btn-custom:hover {
+    background-color: #e6c100; /* Color de fondo al pasar el ratón (amarillo más oscuro) */
+    color: #000; /* Color del texto (negro) */
+}

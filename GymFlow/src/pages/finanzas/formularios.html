@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Suscripciones</title>
+    <link href="../../assets/css/styles.css" rel="stylesheet">
+    <link href="../../assets/js/script.js" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Cancelar Suscripción -->
+    <section id="cancelar-suscripcion">
+        <h1>Cancelar Suscripción</h1>
+        <form id="cancel-subscription-form">
+            <p>Para cancelar tu suscripción, sigue el proceso a continuación:</p>
+            <button type="submit">Cancelar Suscripción</button>
+        </form>
+    </section>
+
+    <!-- Cambiar Plan de Suscripción -->
+    <section id="cambiar-plan">
+        <h1>Cambiar Plan de Suscripción</h1>
+        <form id="change-plan-form">
+            <label for="current-plan">Plan Actual:</label>
+            <input type="text" id="current-plan" name="current-plan" readonly value="Plan Actual">
+
+            <label for="new-plan">Nuevo Plan:</label>
+            <select id="new-plan" name="new-plan" required>
+                <option value="annual">Anual</option>
+                <option value="semiannual">Semestral</option>
+                <option value="monthly">Mensual</option>
+                <option value="biweekly">Quincenal</option>
+                <option value="weekly">Semanal</option>
+            </select>
+
+            <button type="submit">Cambiar Plan</button>
+        </form>
+    </section>
+
+    <!-- Ver Historial de Pagos -->
+    <section id="historial-pagos">
+        <h1>Historial de Pagos</h1>
+        <form id="filter-history-form">
+            <label for="filter">Filtrar por:</label>
+            <select id="filter" name="filter">
+                <option value="date">Fecha</option>
+                <option value="name">Nombre</option>
+            </select>
+
+            <button type="submit">Aplicar Filtros</button>
+        </form>
+
+        <table id="payment-history">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Nombre</th>
+                    <th>Monto</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Datos del historial de pagos -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Notificaciones de Pagos -->
+    <section id="notificaciones-pagos">
+        <h1>Notificaciones de Pagos</h1>
+        <div id="notifications">
+            <!-- Notificaciones aparecerán aquí -->
+        </div>
+    </section>
+
+    <!-- Añadir Suscripción -->
+    <section id="anadir-suscripcion">
+        <h1>Añadir Suscripción</h1>
+        <form id="add-subscription-form">
+            <label for="subscription-type">Tipo de Suscripción:</label>
+            <select id="subscription-type" name="subscription-type" required>
+                <option value="annual">Anual</option>
+                <option value="semiannual">Semestral</option>
+                <option value="monthly">Mensual</option>
+                <option value="biweekly">Quincenal</option>
+                <option value="weekly">Semanal</option>
+            </select>
+
+            <label for="start-date">Fecha de Inicio:</label>
+            <input type="date" id="start-date" name="start-date" required>
+
+            <button type="submit">Añadir Suscripción</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
