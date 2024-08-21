@@ -21,6 +21,9 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
@@ -48,8 +51,8 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
       
-      <a class="btn-getstarted" href="index.html#about">Iniciar Sesión</a>
-      <a class="btn-getstarted" href="index.html#about">Registrarse</a>
+      <a class="btn-getstarted" href="iniciar-sesion.html">Iniciar Sesión</a>
+      <a class="btn-getstarted" href="registro.html">Registrarse</a>
 
     
     </div>
@@ -119,7 +122,7 @@
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4">
             <div class="col-lg-6 order-1 order-lg-2">
-              <img src="assets/img/about.jpg" class="img-fluid" alt="">
+              <img src="assets/img/AboutEntrenador.jpeg" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 order-2 order-lg-1 content">
               <h3>Lo mejor de lo mejor</h3>
@@ -137,62 +140,112 @@
     </section><!-- /Services Section -->
     <!-- About Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Planes</h2>
-        <p>Dale un vistazo a nuestros planes disponibles</p>
-      </div><!-- End Section Title -->
+<!-- Services Section -->
+<section id="services" class="services section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+      <h2>Planes</h2>
+      <p>Dale un vistazo a nuestros planes disponibles</p>
+  </div><!-- End Section Title -->
 
-      <div class="container">
+  <div class="container">
+      <div id="plansCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Carousel Indicators (Counter) -->
+          <ol class="carousel-indicators">
+              <li data-bs-target="#plansCarousel" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#plansCarousel" data-bs-slide-to="1"></li>
+          </ol>
 
-        <div class="row gy-4">
+          <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                  <div class="row gy-4">
+                      <div class="col-lg-4 col-md-6">
+                          <div class="service-item position-relative">
+                              <div class="icon">
+                                  <i class="bi bi-calendar-heart"></i>
+                              </div>
+                              <a href="service-details.html" class="stretched-link">
+                                  <h3>Plan Semanal</h3>
+                              </a>
+                              <p>¡Si tu tiempo es limitado, este plan es ideal para ti!</p>
+                          </div>
+                      </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Plan A</h3>
-              </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-            </div>
-          </div><!-- End Service Item -->
+                      <div class="col-lg-4 col-md-6">
+                          <div class="service-item position-relative">
+                              <div class="icon">
+                                  <i class="bi bi-calendar2-week-fill"></i>
+                              </div>
+                              <a href="service-details.html" class="stretched-link">
+                                  <h3>Plan Quincenal</h3>
+                              </a>
+                              <p>¡Ideal para los miembros que les gusta tomarse breaks!</p>
+                          </div>
+                      </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Plan B</h3>
-              </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-            </div>
-          </div><!-- End Service Item -->
+                      <div class="col-lg-4 col-md-6">
+                          <div class="service-item position-relative">
+                              <div class="icon">
+                                  <i class="bi bi-calendar"></i>
+                              </div>
+                              <a href="service-details.html" class="stretched-link">
+                                  <h3>Plan Mensual</h3>
+                              </a>
+                              <p>El plan Mensual es apto para todos los que deseen renovarlo mes a mes</p>
+                          </div>
+                      </div><!-- End Service Item -->
+                  </div>
+              </div><!-- End Slide 1 -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-easel"></i>
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Plan C</h3>
-              </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-            </div>
-          </div><!-- End Service Item -->
-        </div>
+              <!-- Slide 2 (New Cards) -->
+              <div class="carousel-item">
+                  <div class="row gy-4">
+                      <div class="col-lg-4 col-md-6">
+                          <div class="service-item position-relative">
+                              <div class="icon">
+                                  <i class="bi bi-calendar3"></i>
+                              </div>
+                              <a href="service-details.html" class="stretched-link">
+                                  <h3>Plan Semestral</h3>
+                              </a>
+                              <p>Si lo que deseas es comprometerte y eres un nivel medio, te recomendamos nuestro plan semestral.</p>
+                          </div>
+                      </div><!-- End Service Item -->
+
+                      <div class="col-lg-4 col-md-6">
+                          <div class="service-item position-relative">
+                              <div class="icon">
+                                  <i class="bi bi-bullseye"></i>
+                              </div>
+                              <a href="service-details.html" class="stretched-link">
+                                  <h3>Plan Anual</h3>
+                              </a>
+                              <p>¡Descubre el Plan Anual, diseñado para mostrar tu compromiso por un año con mega ofertas!.</p>
+                          </div>
+                      </div><!-- End Service Item -->
+                  </div>
+              </div><!-- End Slide 2 -->
+          </div>
+
+          <!-- Carousel Controls (Arrows) -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#plansCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#plansCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
       </div>
-    </section><!-- /Services Section -->
+  </div>
+</section><!-- /Services Section -->
 
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section dark-background">
 
-      <img src="assets/img/cta-bg.jpg" alt="">
+      <img src="assets/img/EmpezarBG.png" alt="">
 
       <div class="container">
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
@@ -208,125 +261,129 @@
 
     </section><!-- /Call To Action Section -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Productos a la venta</h2>
-        <p>¡Mira lo que puedes conseguir en nuestra tienda en línea!</p>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Productos a la venta</h2>
+    <p>¡Mira lo que puedes conseguir en nuestra tienda en línea!</p>
+  </div><!-- End Section Title -->
 
-      <div class="container">
+  <div class="container">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Todos</li>
-            <li data-filter=".filter-app">Pre-entrenos</li>
-            <li data-filter=".filter-product">Proteína</li>
-            <li data-filter=".filter-branding">Creatína</li>
-          </ul><!-- End Portfolio Filters -->
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">Todos</li>
+        <li data-filter=".filter-preentreno">Pre-entrenos</li>
+        <li data-filter=".filter-proteina">Proteína</li>
+        <li data-filter=".filter-complementos">Complementos</li>
+      </ul><!-- End Portfolio Filters -->
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-preentreno">
+          <img src="assets/img/masonry-portfolio/PreEntrenoCaramelo.png" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Pre-Entreno Coco y Caramelo</h4>
+            <p>Polvo de proteína de suero diseñado para mejorar la ganancia muscular magra y promover la recuperación muscular.</p>
+            <a href="assets/img/masonry-portfolio/PreEntrenoCaramelo.png" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-preentreno">
+          <img src="assets/img/masonry-portfolio/PreEntreno Uva.png" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Pre-Entreno Uva</h4>
+            <p>Pre-entrenamiento EXTREMADAMENTE potente formulado para mejorar la experiencia general del entrenamiento, brindando bombeos musculares de alto volumen, energía intensa y un enfoque inigualable.</p>
+            <a href="assets/img/masonry-portfolio/PreEntreno Uva.png" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
         </div>
 
-      </div>
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-proteina">
+          <img src="assets/img/masonry-portfolio/ProteinaClasica.png" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Proteína Clásica</h4>
+            <p>PRO JYM ayuda a maximizar la recuperación post-entrenamiento al entregar rápidamente niveles umbrales de leucina y otros BCAA del aislado de proteínas de suero, estos aminoácidos estimulan al máximo el proceso de construcción y reparación muscular.</p>
+            <a href="assets/img/masonry-portfolio/ProteinaClasica.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
 
-    </section><!-- /Portfolio Section -->
+        
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-proteina">
+          <img src="assets/img/masonry-portfolio/ProteínaChocolate.png" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Proteína Chocolate</h4>
+            <p>PRO JYM ayuda a maximizar la recuperación post-entrenamiento al entregar rápidamente niveles umbrales de leucina y otros BCAA del aislado de proteínas de suero. Ayuda a mantener este proceso crítico durante varias horas con proteínas de clara de huevo, caseína micelar y aislado de proteínas de la leche.</p>
+            <a href="assets/img/masonry-portfolio/ProteínaChocolate.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-complementos">
+          <img src="assets/img/masonry-portfolio/Creatina.png" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Creatina</h4>
+            <p>Creatina Ronnie Coleman Signature Series. Ideal para el crecimiento muscular, aumentar el rendimiento y reducir el dolor post entreno.</p>
+            <a href="assets/img/masonry-portfolio/Creatina.png" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-complementos">
+          <img src="assets/img/masonry-portfolio/ComplenentoPacj.png" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Paquete de complemento</h4>
+            <p>⚡Los instintos no solo reducen el estrés causado por la incapacidad de actuar bajo presión, sino que también maximizan el deseo y la potencia sexuales. La combinación de aliviar la fatiga, mejorar la resistencia física, aumentar la libido y restaurar la función sexual te hará sentir como un adolescente nuevamente.</p>
+            <a href="assets/img/masonry-portfolio/ComplenentoPacj.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+
+
+        </div><!-- End Portfolio Item -->
+
+        <!-- Puedes añadir más productos aquí siguiendo el mismo formato -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-complementos">
+          <img src="assets/img/masonry-portfolio/ComplementoMG.png" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Paquete de complemento</h4>
+            <p>ALLMASS Advanced Muscle Builder ayuda a prevenir la degradación muscular después del entrenamiento, lo que pone su cuerpo en un estado anabólico (aumentando la síntesis muscular).</p>
+            <a href="assets/img/masonry-portfolio/ComplementoMG.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-complementos">
+          <img src="assets/img/masonry-portfolio/MassGainer.png" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Ganador de Peso</h4>
+            <p>Mass Tech es un ganador de peso ideal para aquel deportista que esté interesado en crear músculo y aumentar su fuerza sin añadir grasas extras. </p>
+            <a href="assets/img/masonry-portfolio/MassGainer.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-proteina">
+          <img src="assets/img/masonry-portfolio/Complemento.png" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Proteína Ration</h4>
+            <p>rate sus músculos exactamente como se merecen, una enérgica porción de hidrolizado de proteína de suero y concentrado listo para alimentar tus músculos y aumentar su recuperación después de entrenamientos intensos. </p>
+            <a href="assets/img/masonry-portfolio/Complemento.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div>
+      </div><!-- End Portfolio Container -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Portfolio Section -->
 
     <!-- Stats Section -->
     <section id="stats" class="stats section">
@@ -336,14 +393,14 @@
         <div class="row gy-4 align-items-center justify-content-between">
 
           <div class="col-lg-5">
-            <img src="assets/img/stats-img.jpg" alt="" class="img-fluid">
+            <img src="assets/img/Metricas.jpeg" alt="" class="img-fluid">
           </div>
 
           <div class="col-lg-6">
 
-            <h3 class="fw-bold fs-2 mb-3">Voluptatem dignissimos provident quasi</h3>
+            <h3 class="fw-bold fs-2 mb-3">Nuestros logros</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+Se parte de la familia y aporta a nuestros logros como el mejor gimnasio de Alajuela
             </p>
 
             <div class="row gy-4">
@@ -352,28 +409,18 @@
                 <div class="stats-item d-flex">
                   <i class="bi bi-emoji-smile flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
+                    <span data-purecounter-start="0" data-purecounter-end="300" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Miembros</strong> <span>Que han logrado sus objetivos con nosotros</span></p>
                   </div>
                 </div>
               </div><!-- End Stats Item -->
 
               <div class="col-lg-6">
                 <div class="stats-item d-flex">
-                  <i class="bi bi-journal-richtext flex-shrink-0"></i>
+                  <i class="bi bi-calendar flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
-                  </div>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-6">
-                <div class="stats-item d-flex">
-                  <i class="bi bi-headset flex-shrink-0"></i>
-                  <div>
-                    <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
+                    <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Días a la semana</strong> <span>Para que entrenes a tu ritmo</span></p>
                   </div>
                 </div>
               </div><!-- End Stats Item -->
@@ -382,8 +429,8 @@
                 <div class="stats-item d-flex">
                   <i class="bi bi-people flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
+                    <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Entrenadores</strong> <span>De alto nivel para ayudarte a cumplir tus metas</span></p>
                   </div>
                 </div>
               </div><!-- End Stats Item -->
@@ -426,8 +473,8 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h3>Roney Cornejo</h3>
+                <h4>Dueño &amp; Fundador</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -442,8 +489,8 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
+                <h3>Anita la huerfanita</h3>
+                <h4>Miembro</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -458,8 +505,8 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
+                <h3>Daniel Gutierres</h3>
+                <h4>Miembro</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -474,8 +521,8 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
+                <h3>Rodrigo Pérez</h3>
+                <h4>Entrenador</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -490,8 +537,8 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
+                <h3>Luis Enrique</h3>
+                <h4>Entrenador</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
@@ -536,8 +583,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
+                <h4>Roney Corenejo</h4>
+                <span>Dueño y Fundador</span>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -554,8 +601,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Sarah Vargas</h4>
+                <span>Entrenadora</span>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -572,8 +619,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
+                <h4>Luis Andrés</h4>
+                <span>Entrenador</span>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -590,8 +637,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
+                <h4>Andrea Martinez</h4>
+                <span>Finanzas</span>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -623,24 +670,24 @@
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <h3>Dirección</3>
+                <p>Alajuela, Costa Rica. Contiguo al supermercado 777, San Juán, San Ramón</p>
               </div>
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
+                <h3>Llámanos</h3>
+                <p>+506 8311 5409</p>
               </div>
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
-                <h3>Email Us</h3>
-                <p>info@example.com</p>
+                <h3>Envíanos un correo</h3>
+                <p>MuscleDesginer@gmail.com</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -651,27 +698,27 @@
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" placeholder="Nombre" required="">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <input type="email" class="form-control" name="email" placeholder="Correo" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" class="form-control" name="subject" placeholder="Motivo" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required=""></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
+                  <div class="loading">Cargando...</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message">Tu mensaje se ha enviado con éxito. ¡Gracias!</div>
 
-                  <button type="submit">Send Message</button>
+                  <button type="submit">Enviar mensaje</button>
                 </div>
 
               </div>
@@ -693,13 +740,13 @@
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">GP</span>
+              <span class="sitename">Muscle Designer Gym</span>
             </a>
             <div class="footer-contact pt-3">
-              <p>A108 Adam Street</p>
-              <p>New York, NY 535022</p>
-              <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-              <p><strong>Email:</strong> <span>info@example.com</span></p>
+              <p>San Juán, San Ramón</p>
+              <p>Alajuela</p>
+              <p class="mt-3"><strong>Teléfono:</strong> <span>+506 8311 5409</span></p>
+              <p><strong>Correo:</strong> <span>MuscleDesginer@gmail.com</span></p>
             </div>
             <div class="social-links d-flex mt-4">
               <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -710,51 +757,30 @@
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Links útiles</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Inicio</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Nostros</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Servicios</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#"> Terms of service</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#"> Privacy policy</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Web Design</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Web Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Product Management</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Marketing</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-12 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-            <form action="forms/newsletter.php" method="post" class="php-email-form">
-              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-            </form>
-          </div>
-
+     
         </div>
       </div>
     </div>
 
     <div class="copyright">
       <div class="container text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">GP</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Muscle Desginer</strong> <span>All Rights Reserved</span></p>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you've purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Diseñado por <a href="">GymFlow</a>
         </div>
       </div>
     </div>
