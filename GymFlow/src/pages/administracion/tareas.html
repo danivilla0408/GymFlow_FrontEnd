@@ -305,12 +305,12 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1 style="color: #363636;">Control de Tareas</h1>
+      <h1 style="color: #ffffff;">Control de Tareas</h1>
       <nav>
         <ol class="breadcrumb">
-          <li style="color: #363636;" class="breadcrumb-item"><a href="../../../public/index.html">Home</a></li>
+          <li style="color: #EFE902;" class="breadcrumb-item"><a href="../../../public/index.html">Home</a></li>
 
-          <li style="color: #363636;" class="breadcrumb-item active">Control de Tareas</li>
+          <li style="color: #EFE902;" class="breadcrumb-item active">Control de Tareas</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -320,43 +320,43 @@
         <div class="row">
           <div class="col-12">
             <div class="bg-white p-3 border-bottom">
-              <h1 class="h4 fw-bold">Task Management</h1>
+              <h1 class="h4 fw-bold">Manejo de Tareas</h1>
             </div>
             <div class="flex-grow-1 d-grid grid-template-columns-auto-1fr gap-3 p-3">
               <div class="row">
                 <div class="col-6">
                   <div class="bg-white rounded p-3 shadow">
-                    <h2 class="h6 fw-bold mb-3">Create Task</h2>
+                    <h2 class="h6 fw-bold mb-3">Crear Tarea</h2>
                     <div class="d-grid gap-2">
                       <div>
-                        <label class="form-label small fw-medium" for="title">Title</label>
+                        <label class="form-label small fw-medium" for="title">Titulo</label>
                         <input type="text" class="form-control form-control-sm" id="title" />
                       </div>
                       <div>
-                        <label class="form-label small fw-medium" for="description">Description</label>
+                        <label class="form-label small fw-medium" for="description">Descripcion</label>
                         <textarea class="form-control form-control-sm" id="description" rows="3"></textarea>
                       </div>
                       <div>
-                        <label class="form-label small fw-medium" for="assignedTo">Assigned To</label>
+                        <label class="form-label small fw-medium" for="assignedTo">Asignar A</label>
                         <button type="button" class="form-select form-select-sm" id="assignedTo">
                           <span></span>
                         </button>
                       </div>
                       <div>
-                        <label class="form-label small fw-medium" for="dueDate">Due Date</label>
+                        <label class="form-label small fw-medium" for="dueDate">Fecha límite</label>
                       </div>
-                      <button style="background-color: #EFE902;" class="btn  btn-sm">Create Task</button>
+                      <button style="background-color: #EFE902;" class="btn  btn-sm">Crear Tarea</button>
                     </div>
                   </div>
                 </div>
                 <div class="col-6">
                   <div class="bg-white rounded p-3 shadow">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                      <h2 class="h6 fw-bold">Tasks</h2>
+                      <h2 class="h6 fw-bold">Tareas</h2>
                       <div>
                         <div class="btn-group btn-group-sm">
-                          <button type="button" class="btn btn-outline-warning active">Active</button>
-                          <button type="button" class="btn btn-outline-warning">Completed</button>
+                          <button type="button" class="btn btn-outline-warning active">Activa</button>
+                          <button type="button" class="btn btn-outline-warning">Completada</button>
                         </div>
                       </div>
                     </div>
@@ -365,11 +365,11 @@
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
                             <h3 class="h6 fw-bold">Finish quarterly report</h3>
-                            <p class="small text-muted">Assigned to: John Doe</p>
+                            <p class="small text-muted">Asignada a: John Doe</p>
                           </div>
                           <div>
-                            <p class="small text-muted">Due: 2024-09-15</p>
-                            <span style="background-color: #EFE902;" class="badge text-dark">Active</span>
+                            <p class="small text-muted">Fecha Limite: 2024-09-15</p>
+                            <span style="background-color: #EFE902;" class="badge text-dark">Activa</span>
                           </div>
                         </div>
                       </div>
@@ -377,11 +377,11 @@
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
                             <h3 class="h6 fw-bold">Implement new feature</h3>
-                            <p class="small text-muted">Assigned to: Jane Smith</p>
+                            <p class="small text-muted">Asignada a: Jane Smith</p>
                           </div>
                           <div>
-                            <p class="small text-muted">Due: 2024-08-31</p>
-                            <span style="background-color: #EFE902;" class="badge  text-dark ">Active</span>
+                            <p class="small text-muted">Fecha Limite: 2024-08-31</p>
+                            <span style="background-color: #EFE902;" class="badge  text-dark ">Activa</span>
                           </div>
                         </div>
                       </div>
@@ -397,56 +397,57 @@
 
           <div class="col-12">
             <div class="bg-white p-3 border-bottom">
-              <h1 class="h4 fw-bold">Reminders Management</h1>
+                <h1 class="h4 fw-bold">Gestión de Recordatorios</h1>
             </div>
             <div class="flex-grow-1 d-grid grid-template-columns-auto-1fr gap-3 p-3">
-              <div class="bg-white rounded p-3 shadow">
-                <h2 class="h6 fw-bold mb-3">Create Reminder</h2>
-                <div class="d-grid gap-2">
-                  <div>
-                    <label class="form-label small fw-medium" for="reminderTitle">Title</label>
-                    <input type="text" class="form-control form-control-sm" id="reminderTitle" />
-                  </div>
-                  <div>
-                    <label class="form-label small fw-medium" for="reminderDate">Date</label>
-                  </div>
-                  <div>
-                    <label class="form-label small fw-medium" for="reminderTime">Time</label>
-                    <input type="time" class="form-control form-control-sm" id="reminderTime" />
-                  </div>
-                  <button style="background-color: #EFE902;" class="btn  btn-sm">Create Reminder</button>
-                </div>
-              </div>
-              <div class="bg-white rounded p-3 shadow">
-                <h2 class="h6 fw-bold mb-3">Reminders</h2>
-                <div class="d-grid gap-2">
-                  <div class="card border-0 bg-light shadow-sm p-3">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div>
-                        <h3 class="h6 fw-bold">Finish quarterly report</h3>
-                        <p class="small text-muted">2024-09-10 at 10:00</p>
-                      </div>
-                      <button class="btn btn-sm btn-outline-danger">
-                        <i class="bi bi-trash"></i>
-                      </button>
+                <div class="bg-white rounded p-3 shadow">
+                    <h2 class="h6 fw-bold mb-3">Crear Recordatorio</h2>
+                    <div class="d-grid gap-2">
+                        <div>
+                            <label class="form-label small fw-medium" for="reminderTitle">Título</label>
+                            <input type="text" class="form-control form-control-sm" id="reminderTitle" />
+                        </div>
+                        <div>
+                            <label class="form-label small fw-medium" for="reminderDate">Fecha</label>
+                            <input type="date" class="form-control form-control-sm" id="reminderDate" />
+                        </div>
+                        <div>
+                            <label class="form-label small fw-medium" for="reminderTime">Hora</label>
+                            <input type="time" class="form-control form-control-sm" id="reminderTime" />
+                        </div>
+                        <button style="background-color: #EFE902;" class="btn btn-sm">Crear Recordatorio</button>
                     </div>
-                  </div>
-                  <div class="card border-0 bg-light shadow-sm p-3">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div>
-                        <h3 class="h6 fw-bold">Implement new feature</h3>
-                        <p class="small text-muted">2024-08-29 at 14:30</p>
-                      </div>
-                      <button class="btn btn-sm btn-outline-danger">
-                        <i class="bi bi-trash"></i>
-                      </button>
-                    </div>
-                  </div>
                 </div>
-              </div>
+                <div class="bg-white rounded p-3 shadow">
+                    <h2 class="h6 fw-bold mb-3">Recordatorios</h2>
+                    <div class="d-grid gap-2">
+                        <div class="card border-0 bg-light shadow-sm p-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h3 class="h6 fw-bold">Terminar informe trimestral</h3>
+                                    <p class="small text-muted">2024-09-10 a las 10:00</p>
+                                </div>
+                                <button class="btn btn-sm btn-outline-danger">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card border-0 bg-light shadow-sm p-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h3 class="h6 fw-bold">Implementar nueva característica</h3>
+                                    <p class="small text-muted">2024-08-29 a las 14:30</p>
+                                </div>
+                                <button class="btn btn-sm btn-outline-danger">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-
+        </div>
+        
         </div>
 
 
