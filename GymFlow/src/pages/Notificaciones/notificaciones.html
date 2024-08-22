@@ -25,6 +25,7 @@
   <link href="../../assets/vendor/quill/quill.bubble.css" rel="stylesheet">
   <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="../../assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  
 
   <!-- Template Main CSS File -->
   <link href="../../assets/css/style.css" rel="stylesheet">
@@ -66,7 +67,7 @@
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
             <li class="dropdown-header">
               You have 4 new notifications
-              <a href="../Notificaciones/notificaciones.html"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
             </li>
             <li>
               <hr class="dropdown-divider">
@@ -124,7 +125,7 @@
               <hr class="dropdown-divider">
             </li>
             <li class="dropdown-footer">
-              <a href="../Notificaciones/notificaciones.html">Show all notifications</a>
+              <a href="#">Show all notifications</a>
             </li>
 
           </ul><!-- End Notification Dropdown Items -->
@@ -263,244 +264,66 @@
 
     <ul class="sidebar-nav" id="sidebar-nav">
 
-      <li  class="nav-item bg-danger">
-        <a  style="color: #363636;" class="nav-link " href="../../../src/pages/administracion/control_clientes.html">
-          <i  style="color: #363636;" class="bi bi-grid"></i>
-          <span >Control de Clientes</span>
-        </a>
-      </li><!-- End Dashboard Nav -->
+      
 
       <li  class="nav-item bg-danger">
-        <a  style="color: #363636;" class="nav-link " href="../../../src/pages/administracion/control_empleados.html">
+        <a  style="color: #363636;" class="nav-link " href="../../../src/pages/reportes/nuevos_reportes.html">
           <i  style="color: #363636;" class="bi bi-grid"></i>
-          <span >Control de Empleados</span>
+          <span >Notificaciones</span>
         </a>
       </li><!-- End Dashboard Nav -->
-
-      <li  class="nav-item bg-danger">
-        <a  style="color: #363636;" class="nav-link " href="../../../src/pages/administracion/tareas.html">
-          <i  style="color: #363636;" class="bi bi-grid"></i>
-          <span >Tareas</span>
-        </a>
-      </li><!-- End Dashboard Nav -->
-
-
-      <li  class="nav-item bg-danger">
-        <a  style="color: #363636;" class="nav-link " href="../../../src/pages/administracion/horarios.html">
-          <i  style="color: #363636;" class="bi bi-grid"></i>
-          <span >Horarios</span>
-        </a>
-      </li><!-- End Dashboard Nav -->
-
-
-   
-
     </ul>
 
-  </aside><!-- End Sidebar-->
+  </aside><!-- End Sidebar--><!-- End Sidebar-->
 
   <main id="main" class="main">
 
-    <div class="pagetitle">
-      <h1>Control de Horarios</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="../../../public/index.html">Home</a></li>
-        
-          <li class="breadcrumb-item active">Control de Horarios</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
+    <div class="notificaciones">
+        <h2>Notificaciones</h2>
 
-    <section class="section dashboard">
-      <div class="row p-4">
-        <div class="col-md-6">
-          <div class="col-md-6">
-            <h2 class="text-2xl font-bold mb-4">Crear Horario para Empleado</h2>
-            
-            <form>
-              <div class="form-group mb-3">
-                <label for="employee-select">Seleccionar Empleado</label>
-                <select id="employee-select" class="form-control">
-                  <option>Seleccionar un empleado</option>
-                  <option>John Doe</option>
-                  <option>Jane Smith</option>
-                  <option>Bob Johnson</option>
-                </select>
-              </div>
-              
-              <div class="form-group mb-3">
-                <label for="monday-start">Lunes</label>
-                <div class="d-flex">
-                  <input type="time" id="monday-start" class="form-control me-2">
-                  <input type="time" id="monday-end" class="form-control me-2">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="monday-off">
-                    <label class="form-check-label" for="monday-off">Libre</label>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="form-group mb-3">
-                <label for="tuesday-start">Martes</label>
-                <div class="d-flex">
-                  <input type="time" id="tuesday-start" class="form-control me-2">
-                  <input type="time" id="tuesday-end" class="form-control me-2">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="tuesday-off">
-                    <label class="form-check-label" for="tuesday-off">Libre</label>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Repetir para los demás días -->
-              
-              <div class="form-group mb-3">
-                <label for="wednesday-start">Miércoles</label>
-                <div class="d-flex">
-                  <input type="time" id="wednesday-start" class="form-control me-2">
-                  <input type="time" id="wednesday-end" class="form-control me-2">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="wednesday-off">
-                    <label class="form-check-label" for="wednesday-off">Libre</label>
-                  </div>
-                </div>
-              </div>
-          
-              <div class="form-group mb-3">
-                <label for="thursday-start">Jueves</label>
-                <div class="d-flex">
-                  <input type="time" id="thursday-start" class="form-control me-2">
-                  <input type="time" id="thursday-end" class="form-control me-2">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="thursday-off">
-                    <label class="form-check-label" for="thursday-off">Libre</label>
-                  </div>
-                </div>
-              </div>
-          
-              <div class="form-group mb-3">
-                <label for="friday-start">Viernes</label>
-                <div class="d-flex">
-                  <input type="time" id="friday-start" class="form-control me-2">
-                  <input type="time" id="friday-end" class="form-control me-2">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="friday-off">
-                    <label class="form-check-label" for="friday-off">Libre</label>
-                  </div>
-                </div>
-              </div>
-          
-              <div class="form-group mb-3">
-                <label for="saturday-start">Sábado</label>
-                <div class="d-flex">
-                  <input type="time" id="saturday-start" class="form-control me-2">
-                  <input type="time" id="saturday-end" class="form-control me-2">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="saturday-off">
-                    <label class="form-check-label" for="saturday-off">Libre</label>
-                  </div>
-                </div>
-              </div>
-          
-              <div class="form-group mb-3">
-                <label for="sunday-start">Domingo</label>
-                <div class="d-flex">
-                  <input type="time" id="sunday-start" class="form-control me-2">
-                  <input type="time" id="sunday-end" class="form-control me-2">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="sunday-off">
-                    <label class="form-check-label" for="sunday-off">Libre</label>
-                  </div>
-                </div>
-              </div>
-          
-              <button type="submit" style="background-color: #EFE902;" class="btn ">Guardar Horario</button>
-            </form>
-          </div>
-          
-        </div>
-        <div class="col-md-6">
-          <h2 class="h4 font-weight-bold mb-4">Horario Semanal General</h2>
-          <div class="d-flex justify-content-between align-items-center mb-4">
-            <button class="btn btn-outline-secondary">
-              <i class="bi bi-arrow-left"></i> Semana Anterior
-            </button>
-            <div>Agosto 2024</div>
-            <button class="btn btn-outline-secondary">
-              Semana Siguiente <i class="bi bi-arrow-right"></i>
-            </button>
-          </div>
-          <div class="border rounded p-3">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Empleado</th>
-                  <th>Mié</th>
-                  <th>Jue</th>
-                  <th>Vie</th>
-                  <th>Sáb</th>
-                  <th>Dom</th>
-                  <th>Lun</th>
-                  <th>Mar</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>John Doe</td>
-                  <td class="bg-warning">5:00 - 13:00</td> <!-- Mañana -->
-                  <td class="bg-warning-subtle">14:00 - 22:00</td>   <!-- Tarde -->
-                  <td class="bg-secondary">22:00 - 5:00</td> <!-- Noche -->
-                  <td class="bg-warning">5:00 - 13:00</td>
-                  <td class="bg-warning-subtle">14:00 - 22:00</td>
-                  <td class="bg-secondary">22:00 - 5:00</td>
-                  <td class="bg-warning">5:00 - 13:00</td>
-                </tr>
-                <tr>
-                  <td>Jane Smith</td>
-                  <td class="bg-warning-subtle">14:00 - 22:00</td>  <!-- Tarde -->
-                  <td class="bg-secondary">22:00 - 5:00</td> <!-- Noche -->
-                  <td class="bg-warning">5:00 - 13:00</td> 
-                  <td class="bg-warning-subtle">14:00 - 22:00</td>
-                  <td class="bg-secondary">22:00 - 5:00</td>
-                  <td class="bg-warning">5:00 - 13:00</td>
-                  <td class="bg-warning-subtle">14:00 - 22:00</td>
-                </tr>
-                <tr>
-                  <td>Bob Johnson</td>
-                  <td class="bg-secondary">22:00 - 5:00</td> <!-- Noche -->
-                  <td class="bg-warning">5:00 - 13:00</td>
-                  <td class="bg-warning-subtle">14:00 - 22:00</td>
-                  <td class="bg-secondary">22:00 - 5:00</td>
-                  <td class="bg-warning">5:00 - 13:00</td>
-                  <td class="bg-warning-subtle">14:00 - 22:00</td>
-                  <td class="bg-secondary">22:00 - 5:00</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        
-        <!-- Agrega estilos para los colores -->
-        <style>
-          .bg-warning {
-            background-color: #ffc107; /* Amarillo para mañana */
-          }
-          .bg-info {
-            background-color: #17a2b8; /* Azul para tarde */
-          }
-          .bg-dark {
-            background-color: #343a40; /* Gris oscuro para noche */
-          }
-          .text-white {
-            color: #ffffff; /* Texto blanco para el turno de noche */
-          }
-        </style>
-        
-        
-      </div>
-      
-    </section>
+        <ul>
+            <li class="notificacion">
+                <i class="fas fa-exclamation-circle alert-icon warning"></i>
+                <div class="titulo">Advertencia: Problema técnico en el equipo de cardio</div>
+                <div class="descripcion">Se ha detectado un problema técnico en el equipo de cardio. Por favor, revise y solucione el problema lo antes posible.</div>
+            </li>
+            <li class="notificacion">
+                <i class="fas fa-info-circle alert-icon"></i>
+                <div class="titulo">Nueva inscripción en el desafío de fitness</div>
+                <div class="descripcion">Un nuevo miembro se ha inscrito en el desafío de fitness de 30 días. ¡Asegúrese de asignar un entrenador personal!</div>
+            </li>
+            <li class="notificacion">
+                <i class="fas fa-bell alert-icon"></i>
+                <div class="titulo">Recordatorio: Mantenimiento del equipo</div>
+                <div class="descripcion">Recuerde que es hora de realizar el mantenimiento del equipo de pesas y cardio. ¡Asegúrese de programar una cita con el proveedor!</div>
+            </li>
+            <li class="notificacion">
+                <i class="fas fa-fire alert-icon danger"></i>
+                <div class="titulo">Alerta: Problema de seguridad en el gimnasio</div>
+                <div class="descripcion">Se ha detectado un problema de seguridad en el gimnasio. Por favor, revise las cámaras de seguridad y asegúrese de que todos los miembros estén seguros.</div>
+            </li>
+            <li class="notificacion">
+                <i class="fas fa-check-circle alert-icon"></i>
+                <div class="titulo">Confirmación: Pago de membresía</div>
+                <div class="descripcion">El pago de membresía de Juan Pérez ha sido procesado con éxito.</div>
+            </li>
+            <li class="notificacion">
+                <i class="fas fa-user-plus alert-icon"></i>
+                <div class="titulo">Nuevo miembro registrado</div>
+                <div class="descripcion">Un nuevo miembro, María Rodríguez, se ha registrado en el gimnasio. ¡Asegúrese de asignar un entrenador personal!</div>
+            </li>
+            <li class="notificacion">
+                <i class="fas fa-envelope alert-icon"></i>
+                <div class="titulo">Mensaje de un miembro</div>
+                <div class="descripcion">Un miembro, Carlos García, ha enviado un mensaje solicitando información sobre los horarios de entrenamiento.</div>
+            </li>
+            <li class="notificacion">
+                <i class="fas fa-chart-line alert-icon"></i>
+                <div class="titulo">Informe de estadísticas del gimnasio</div>
+                <div class="descripcion">El informe de estadísticas del gimnasio para el mes pasado está disponible. ¡Revise los resultados y ajuste sus estrategias!</div>
+            </li>
+        </ul>
+    </div>
 
   </main><!-- End #main -->
 
@@ -529,6 +352,8 @@
   <script src="../../assets/vendor/simple-datatables/simple-datatables.js"></script>
   <script src="../../assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="../../assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="../../assets/js/main.js"></script>
